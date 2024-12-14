@@ -1,7 +1,10 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "jsx": "react",
     "strict": true,
+    "esModuleInterop": true,  // Ensures non-UMD imports
+    "moduleResolution": "node",
     "paths": {
       "@/*": [
         "./*"
@@ -12,6 +15,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
+    ".expo/types/**/*.tsx",
     "expo-env.d.ts"
   ]
 }
