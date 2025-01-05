@@ -22,6 +22,12 @@ const Signup = () => {
 		  headers: { "Content-Type": "application/json" },
 		  body: JSON.stringify({ email, schoolName, schoolCity, schoolState, schoolMobile }),
 		});
+		
+		if(response.status === 400){
+			const errorData = await response.json();
+			alert(errorData.message);
+			return;
+		}
   
 		if (!response.ok) {
 		  throw new Error("Registration failed");
