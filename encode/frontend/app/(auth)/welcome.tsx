@@ -1,4 +1,5 @@
 import { useRouter } from "expo-router";
+import React from "react";
 import { View , Text, Button  , StyleSheet , Image, Dimensions} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
