@@ -2,7 +2,7 @@ import { Link } from "expo-router";
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Dimensions } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Ionicons } from 'react-native-vector-icons';
+import { Ionicons } from "react-native-vector-icons";
 
 const { width, height } = Dimensions.get("window");
 
@@ -20,7 +20,7 @@ const Auth = () => {
 
       {/* Another Register Button */}
       <TouchableOpacity style={styles.button}>
-        <Link href="/sign-up" style={styles.link}>
+        <Link href="/school-sign-in" style={styles.link}>
           <Text style={styles.buttonText}>Login as School</Text>
         
         </Link>
@@ -29,7 +29,7 @@ const Auth = () => {
 
       {/* Login as Student Button */}
       <TouchableOpacity style={styles.button}>
-        <Link href="/sign-up" style={styles.link}>
+        <Link href="/student-sign-in" style={styles.link}>
           <Text style={styles.buttonText}>Login as a Student</Text>
          
         </Link>
